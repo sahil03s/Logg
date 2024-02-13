@@ -1,0 +1,83 @@
+.icons {
+    float: right;
+    margin-right: 1%;
+}
+
+.icons button {
+    margin-right: 1px;
+    
+}
+
+.back {
+    margin: 0.5%;
+    font-size: 40px;
+    color: black;
+}
+
+.blog-title {
+    display: inline-block;
+}
+
+.link {
+    height: fit-content;
+    color: #adacab;
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.items-center {
+    text-align: center;
+}
+
+.bolder {
+    font-weight: 600;
+}
+
+.spaceBetween > li {
+    padding: 0 5%;
+}
+
+.none-list-style {
+    list-style-type: none;
+}
+
+.text-link {
+    text-decoration: none;
+    color: black;
+}
+
+.about img {
+    width : 25%;
+    margin-top: 0;
+}
+
+.blog-images img {
+    margin: 4%;
+}
+
+.contact {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.contact p, h1 {
+    color: #ab432d;
+}
+
+.contact i {
+    vertical-align: bottom;
+}
+
+.large-font {
+    font-size: large;
+    font-weight: bold;
+}
