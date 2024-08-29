@@ -1,14 +1,17 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 const app = express();
+dotenv.config();
+
 const port = process.env.port || 3080;
 
-const password = encodeURIComponent("database@123");
-const uri = `mongodb+srv://sahil:${password}@cluster0.vhve1kr.mongodb.net/Logg-db?retryWrites=true&w=majority`;
+const password = encodeURIComponent(process.env.DB_PASSWORD);
+const uri = `mongodb+srv://${process.env.DB_USERNAME}:${password}@cluster0.vhve1kr.mongodb.net/Logg-db?retryWrites=true&w=majority&appName=Cluster0`;
 
-mongoose.connect(uri);
+mongoose.connect(uri).then(() => console.log("Connection Successful")).catch((err) => console.log(err));
 
 function getTime() {
     let date = new Date();  
